@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="icon" href="./images/HealthCode_logo.png" />
+        <title>Visit Our GitHub</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Inria Sans', sans-serif;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                color: #EBEBEB;
+                background-color: #ACCAA0;
+            }
+
+            header {
+                background-color: #3a7964c5;
+            }
+
+            .navbar, footer {
+                background-color: #A8A6AD;
+            }
+
+            .content {
+                flex: 1;
+            }
+
+            .github-container {
+                background-color: #EBEBEB;
+                display: flex;
+                align-items: center;
+                /* justify-content: center; */
+                padding: 20px;
+                border-radius: 22px;
+                box-shadow: 2px 6px 10px 4px rgba(0, 0, 0, 0.3);
+            }
+
+            .github-container i {
+                font-size: 3rem;
+                margin-right: 15px;
+                color: #3a7964;
+            }
+
+            .github-container a {
+                color: #474747;
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            footer {
+                padding: 20px 0;
+            }
+
+            .non-clickable {
+                pointer-events: none;
+                text-decoration: none;
+                color: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container d-flex justify-content-start align-items-center">
+                <a href="#" class="navbar-brand">
+                    <img src="./images/HealthCode_logo.png" alt="logo image">
+                </a>
+                <h2 style="font-size: 32px;">
+                    HealthCode
+                </h2>
+            </div>
+        </nav>
+
+        <div class="content">
+            <!-- Header -->
+            <header class="p-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="fw-bold text-center text-md-start mt-3">GitHub Links</h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <section class="my-5">
+                <div class="container w-100 w-md-75">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1 mb-5">
+                            <div class="github-container">
+                                <i class="fa-brands fa-github"></i>
+                                <a 
+                                    class="m-auto"
+                                    href="https://github.com/wastardy/health_code_client.git"
+                                    target="_blank"
+                                >
+                                    Client Repository
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="github-container">
+                                <i class="fa-brands fa-github"></i>
+                                <a 
+                                    class="m-auto"
+                                    href="https://github.com/wastardy/health_code_server.git"
+                                    target="_blank"
+                                >
+                                    Server Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 my-3">
+                        <h5>About HealthCode</h5>
+                        <p>
+                            HealthCode is a social platform for those 
+                            who prioritize well-being. It brings together 
+                            like-minded individuals, offering health tracking, 
+                            nutrition tips, workout insights, and a supportive 
+                            community—all in one place.
+                        </p>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <h5>Our Team</h5>
+                        <ul class="list-unstyled">
+                            <li class="list-item">
+                                Andrew Kononenko - Technical Lead, Backend Developer
+                            </li>
+                            <li class="list-item">
+                                Bohdan Mylyi - Lead Frontend Developer
+                            </li>
+                            <li class="list-item">
+                                Illya Zubko - Frontend Developer
+                            </li>
+                            <li class="list-item">
+                                Yuliana Huda - Project manager 
+                            </li>
+                            <li class="list-item">
+                                Yuliana Zimirska - UI/UX Designer
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <h5>Contact Us</h5>
+                        <p>We would love to hear from you:</p>
+                        <a href="mailto:healthcode@gmail.com" class="text-white non-clickable">
+                            <strong>healthcode@gmail.com</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
